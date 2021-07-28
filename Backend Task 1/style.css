@@ -1,0 +1,18 @@
+h2
+{
+    color: #FF8BC6;
+    text-align: center;
+    border: 5px dashed #FFECF6;
+    cursor: pointer;
+}
+
+p
+{
+    color: pink;
+}
+
+li
+{
+    list-style: none;
+    display: inline-block;
+}
