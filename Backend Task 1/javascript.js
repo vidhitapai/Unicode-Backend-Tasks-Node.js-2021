@@ -1,4 +1,4 @@
-var countObj=[];
+var countObj=[]; //to save each distinct word and number of it's occurences
 
 var n = prompt("Enter number of words:");
 
@@ -36,19 +36,27 @@ for(var i = 0; i < Number(n); i++)
     }
 }
 
+//concatenate occurences in an array
 var occurences = [];
-var nameArray = [];
-// for(var i =0 ; i<n ; i++)
-// {
-//     nameArray.push(countObj[i].name);
-//     occurences += " " + ((countObj[i].value).toString());
-// }
-
 countObj.forEach((currValue, index, arr) =>
 {
-    nameArray.push(arr[index].name);
     occurences += (arr[index].value).toString() + " ";
 });
 
-console.log(nameArray.length);
+//print output
+console.log(countObj.length);
 console.log(occurences);
+
+//bonus task
+countObj.sort((a,b) => {
+    return b.value - a.value;
+});
+console.log("\nBONUS TASK -")
+console.log(`Most repeated word: ${countObj[0].name}`);
+countObj.forEach((item) => 
+{
+    if (item.value === 1)
+    {
+        console.log(`Least repeated word: ${item.name}`);
+    }
+});
