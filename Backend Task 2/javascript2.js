@@ -1,12 +1,13 @@
 var url_bb = 'https://breakingbadapi.com/api/characters'
-async function getAPI()
-{
+
+const express = require('express');
+const app = express();
+const fetch = require('node-fetch');
+
+app.get('/', async (req,res) => {
     const response = await fetch(url_bb);
     const data = await response.json();
-    console.log("Breaking Bad Characters:");
-    for (var i=0; i<62 ; i++)
-    {
-        console.log(data[i].name);
-    }
-}
-getAPI();
+    res.send(data);
+})
+
+app.listen(3000);
