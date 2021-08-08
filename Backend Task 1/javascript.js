@@ -51,11 +51,19 @@ console.log(occurences);
 countObj.sort((a,b) => {
     return b.value - a.value;
 });
+var a = countObj[0].value;
+var b = countObj[(countObj.length)-1].value;
 console.log("\nBONUS TASK -")
-console.log(`Most repeated word: ${countObj[0].name}`);
 countObj.forEach((item) => 
 {
-    if (item.value === 1)
+    if (item.value === a)
+    {
+        console.log(`Most repeated word: ${item.name}`);
+    }
+});
+countObj.forEach((item) => 
+{
+    if (item.value === b)
     {
         console.log(`Least repeated word: ${item.name}`);
     }
