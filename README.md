@@ -1,6 +1,6 @@
 # Unicode-Backend-Tasks-Node.js-2021
 
-## Vidhita Pai - #DaBest
+## Vidhita Pai 
 Hey guys! I've tried my best and attempted 3 out of the 4 tasks given to us, and have learned quite a lot about javascript, node.js and databases in the last few weeks. Hoping that I get the opportunity to continue this journey and become a Backend Web Developer with thorough knowledge of the stack I've chosen!
 
 - TASK 1 -
